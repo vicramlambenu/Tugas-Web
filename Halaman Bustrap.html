@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Registrasi</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Form Registrasi</h2>
+    <form>
+      <table class="table table-borderless">
+        <tbody>
+          <!-- Nama Depan -->
+          <tr>
+            <td><label for="firstName" class="form-label">Nama Depan:</label></td>
+            <td><input type="text" class="form-control" id="firstName" placeholder="Masukkan nama depan" required></td>
+          </tr>
+          <!-- Nama Belakang -->
+          <tr>
+            <td><label for="lastName" class="form-label">Nama Belakang:</label></td>
+            <td><input type="text" class="form-control" id="lastName" placeholder="Masukkan nama belakang" required></td>
+          </tr>
+          <!-- Alamat -->
+          <tr>
+            <td><label for="address" class="form-label">Alamat:</label></td>
+            <td><input type="text" class="form-control" id="address" placeholder="Masukkan alamat" required></td>
+          </tr>
+          <!-- Tanggal Lahir -->
+          <tr>
+            <td><label for="birthDate" class="form-label">Tanggal Lahir:</label></td>
+            <td><input type="date" class="form-control" id="birthDate" required></td>
+          </tr>
+          <!-- Jenis Kelamin -->
+          <tr>
+            <td><label for="gender" class="form-label">Jenis Kelamin:</label></td>
+            <td>
+              <select class="form-select" id="gender" required>
+                <option value="">Pilih jenis kelamin</option>
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+              </select>
+            </td>
+          </tr>
+          <!-- Username -->
+          <tr>
+            <td><label for="username" class="form-label">Username:</label></td>
+            <td><input type="text" class="form-control" id="username" placeholder="Masukkan username" required></td>
+          </tr>
+          <!-- Password -->
+          <tr>
+            <td><label for="password" class="form-label">Password:</label></td>
+            <td><input type="password" class="form-control" id="password" placeholder="Masukkan password" required></td>
+          </tr>
+          <!-- Upload Foto -->
+          <tr>
+            <td><label for="photo" class="form-label">Upload Foto:</label></td>
+            <td><input type="file" class="form-control" id="photo" accept="image/*"></td>
+          </tr>
+          <!-- Tombol Submit -->
+          <tr>
+            <td></td>
+            <td><button type="submit" class="btn btn-primary mt-3">Daftar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
